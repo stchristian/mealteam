@@ -2,9 +2,31 @@ footer {
     text-align: center;
 }
 
-.navbar-brand{
+.navbar-default .navbar-brand{
+  margin-right: 12px;
+  position: relative;
+  overflow: hidden;
   font-family: "Black Ops One", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
-  transform: rotate(-10deg);
+  transform: rotate(-7deg);
+  color: #fff;
+}
+
+
+#navbar{
+  background-color: #62753e;
+  box-shadow: 0 7px 20px rgba(0,0,0,0.3);
+}
+
+.navbar-default .navbar-nav>li>a{
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: .1em;
+  color:#fff;
+  transition: 0.2s ease;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  background-color: white;
+  color: #555;
 }
