@@ -8,7 +8,7 @@
      <defs>
     </defs>
   <path id="Selection"
-        fill="#1c2211" stroke="white" stroke-width="4"
+        fill="none" stroke="#eee" stroke-width="8"
         d="M 1394.61,333.00
            C 1394.61,333.00 1391.16,326.10 1391.16,326.10
              1389.60,323.77 1387.58,322.74 1386.55,320.63

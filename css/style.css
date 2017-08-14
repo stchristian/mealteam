@@ -1,4 +1,4 @@
-.pageWrapper{
+body{
     background-color: #aca66c;
 }
 
@@ -13,10 +13,17 @@
     font-size: 20px;
     transform: rotate(-7deg);
     color: #fff;
+    transition: 0.2s ease;
+    text-shadow: 2px 4px 1px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-brand:hover{
+    transform: scale(1.2);
+    color: #fff !important;
 }
 
 #navbar {
-    background-color: #384323;
+        background-color: #384323;
     box-shadow: 0 7px 1.5rem rgba(0,0,0,0.3);
 
 }
@@ -26,11 +33,14 @@
 }
 
 .navbar-default .navbar-nav>li>a {
+    width: 170px;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     letter-spacing: .1em;
     color:#fff;
     transition: 0.2s ease;
 }
+
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     background-color: white;
@@ -39,14 +49,12 @@
 
 .navbar-default .navbar-nav>.active>a{
     background-image: none;
-    background-color: transparent;
+    background-color: white;
     box-shadow: none;
-    color:white;
+    color:#666;
 }
 
-.navbar-brand{
-    text-shadow: 2px 4px 1px rgba(255, 255, 255, 0.2);
-}
+
 
 .navbar-nav>li>a{
     text-shadow: 1px 3px 3px rgba(255,255,255,0.1);
@@ -59,17 +67,37 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    color: white;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 }
 
+h1 small{
+    color: #283227;
+}
 .jumbotron h1{
     font-family: 'Anton', sans-serif;
     letter-spacing: .1em;
+    color: white;
 }
 
 @media (max-width: 995px) {
     .jumbotron{
         background-size: cover;
+    }
+}
+
+#icon{
+    vertical-align: bottom;
+    border: 4px white solid;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-default .navbar-nav>li>a{
+        width: 100%;
+    }
+    #icon{
+        width: 80px;
     }
 }
 main {
