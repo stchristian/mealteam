@@ -1,13 +1,13 @@
-//footer section
+.pageWrapper{
+    background-color: #aca66c;
+}
+
 #footer {
     text-align: center;
 }
 
-//navbar section
 .navbar-default .navbar-brand {
     margin-right: 12px;
-    position: relative;
-    overflow: hidden;
     font-family: "Black Ops One", sans-serif;
     text-transform: uppercase;
     font-size: 20px;
@@ -16,8 +16,13 @@
 }
 
 #navbar {
-    background-color: #62753e;
+    background-color: #384323;
     box-shadow: 0 7px 1.5rem rgba(0,0,0,0.3);
+
+}
+
+.navbar{
+    border: none;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -32,12 +37,45 @@
     color: #666;
 }
 
-//content section
+.navbar-default .navbar-nav>.active>a{
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    color:white;
+}
+
+.navbar-brand{
+    text-shadow: 2px 4px 1px rgba(255, 255, 255, 0.2);
+}
+
+.navbar-nav>li>a{
+    text-shadow: 1px 3px 3px rgba(255,255,255,0.1);
+}
+
+.jumbotron{
+    margin-top: 80px;
+    background-color: #c8c49d;
+    background-image: url(../img/soldier.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: white;
+}
+
+.jumbotron h1{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .1em;
+}
+
+@media (max-width: 995px) {
+    .jumbotron{
+        background-size: cover;
+    }
+}
 main {
     margin-top: 200px;
 }
 
-//link styles
 a:link {
   color: #62753e;
 }
@@ -52,4 +90,12 @@ a:hover {
 
 a:active {
   color: #bbb;
+}
+
+footer{
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    background-color: #384323;
+    padding: 15px 0;
+    color: white;
 }
