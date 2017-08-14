@@ -1,31 +1,25 @@
-body{
-    background-color: #aca66c;
-}
-
-#footer {
+footer {
     text-align: center;
 }
 
+/*Styling the brand at the top left*/
 .navbar-default .navbar-brand {
     margin-right: 12px;
     font-family: "Black Ops One", sans-serif;
     text-transform: uppercase;
     font-size: 20px;
     transform: rotate(-7deg);
-    color: #fff;
     transition: 0.2s ease;
     text-shadow: 2px 4px 1px rgba(255, 255, 255, 0.2);
 }
 
 .navbar-brand:hover{
     transform: scale(1.2);
-    color: #fff !important;
 }
 
 #navbar {
-        background-color: #384323;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.3),transparent);
     box-shadow: 0 7px 1.5rem rgba(0,0,0,0.3);
-
 }
 
 .navbar{
@@ -33,24 +27,24 @@ body{
 }
 
 .navbar-default .navbar-nav>li>a {
-    width: 170px;
+    width: 190px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .1em;
-    color:#fff;
+    font-weight: bold;
+    letter-spacing: .2em;
     transition: 0.2s ease;
 }
 
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    background-color: white;
-    color: #666;
-}
+/*.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    box-shadow: inset 0px 0px 32px 0px rgba(0,0,0,0.3);
+}*/
 
 .navbar-default .navbar-nav>.active>a{
     background-image: none;
     background-color: white;
-    box-shadow: none;
+    /*-webkit-box-shadow: inset 0px 0px 32px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 32px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 32px 0px rgba(0,0,0,0.3);*/
     color:#666;
 }
 
@@ -92,7 +86,7 @@ h1 small{
     margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .navbar-default .navbar-nav>li>a{
         width: 100%;
     }
