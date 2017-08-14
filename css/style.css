@@ -1,3 +1,5 @@
+
+
 body{
     background-color: #aca66c;
 }
@@ -6,59 +8,59 @@ body{
     text-align: center;
 }
 
-.navbar-default .navbar-brand {
-    margin-right: 12px;
-    font-family: "Black Ops One", sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    transform: rotate(-7deg);
-    color: #fff;
-    transition: 0.2s ease;
-    text-shadow: 2px 4px 1px rgba(255, 255, 255, 0.2);
+/* Styling the navigation bar*/
+.navbar-default{
+    background-image: none;
+    background-image: linear-gradient(to right, #384323, #6f8646 50%,#384323);
+    background-color: #384323 ;
+    box-shadow: 0 7px 1.5rem rgba(0,0,0,0.3);
+    border: none;
 }
 
+/*MEAL TEAM brand at the top left*/
+.navbar-brand {
+    margin: 0 10px;
+    font-family: "Black Ops One", sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    transform: rotate(-5deg);
+    color: #fff !important; /*override default color*/
+    transition: 0.2s ease;
+    text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
+}
 .navbar-brand:hover{
     transform: scale(1.2);
     color: #fff !important;
 }
 
-#navbar {
-        background-color: #384323;
-    box-shadow: 0 7px 1.5rem rgba(0,0,0,0.3);
-
-}
-
-.navbar{
-    border: none;
-}
-
+/*Navbar items*/
 .navbar-default .navbar-nav>li>a {
-    width: 170px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
     letter-spacing: .1em;
     color:#fff;
     transition: 0.2s ease;
+    text-shadow: 1px 3px 3px rgba(0,0,0,0.3);
 }
-
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover{
     background-color: white;
     color: #666;
+    letter-spacing: .2em;
 }
 
+/*Active item on navbar*/
 .navbar-default .navbar-nav>.active>a{
-    background-image: none;
-    background-color: white;
+    background-image: none !important;
+    background-color: transparent;
     box-shadow: none;
-    color:#666;
+    color:#fff;
 }
 
-
-
-.navbar-nav>li>a{
-    text-shadow: 1px 3px 3px rgba(255,255,255,0.1);
+/*Image slider*/
+.carousel-inner .item img{
+    height: 600px;
 }
+
 
 .jumbotron{
     margin-top: 80px;
