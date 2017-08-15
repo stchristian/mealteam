@@ -1,9 +1,9 @@
 
 /*camouflage background for body*/
 body{
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-webkit-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat;
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-o-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent 10%),linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-webkit-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-o-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent 10%),linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
 }
 
 
@@ -20,14 +20,25 @@ main{
 
 /*MEAL TEAM brand at the top left*/
 .navbar-brand {
-    margin: 0 10px;
+    padding: 0px;
+    margin: 0 20px 0 12px;
     font-family: "Black Ops One", sans-serif;
     text-transform: uppercase;
     font-size: 22px;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
     color: #fff !important; /*override default color*/
     transition: 0.2s ease;
     text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
+}
+.brandlogo{
+    vertical-align: middle;
+    display: inline-block;
+    background: url("../img/logo.svg") center/contain no-repeat;
+    background-origin: content-box;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-right: -10px;
 }
 .navbar-brand:hover{
     transform: scale(1.2);
@@ -37,7 +48,7 @@ main{
 /*Navbar items*/
 .navbar-default .navbar-nav>li>a {
     text-align: center;
-    font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: 'Play', sans-serif;
     letter-spacing: .1em;
     color:#fff;
     transition: 0.2s ease;
@@ -124,10 +135,24 @@ a:active {
   color: #bbb;
 }
 
+.btn-primary{
+    background-image: linear-gradient(to bottom,#525c44 0,#283227 100%);
+}
+
 footer{
     font-family: 'Roboto',sans-serif;
     text-align: center;
     background-image: linear-gradient(to right, #283227, #525c44 50%,#283227);
     padding: 15px 0;
     color: white;
+}
+
+
+
+
+.logo-icon{
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+    border: 2px solid white;
+    border-radius: 75px;
+
 }
