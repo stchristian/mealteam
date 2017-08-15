@@ -1,3 +1,11 @@
+/*Itt kezdődjék Hübner Krisztián kódja!
+ *Ha jobban megnézed a kód strukturált, kezdve az általános dolgokkal majd az oldalon fentről lefelé haladva
+ */
+
+/*Default font*/
+*{
+    font-family: 'Play',sans-serif;
+}
 
 /*camouflage background for body*/
 body {
@@ -6,14 +14,16 @@ body {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent 10%),linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
 }
 
-
+/*Navbar is 50px +border*/
 main {
     margin-top: 51px;
 }
 
 /* Styling the navigation bar*/
 .navbar-default {
-    background-image: linear-gradient(to right, #283227, #525c44 50%,#283227);
+    background-image: -webkit-linear-gradient(left, #283227, #525c44 50%, #283227);
+    background-image: -o-linear-gradient(left, #283227, #525c44 50%, #283227);
+    background-image: linear-gradient(to right, #283227, #525c44 50%, #283227);
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     border-bottom: 1px solid #283227;
 }
@@ -49,17 +59,18 @@ main {
 /*Navbar items*/
 .navbar-default .navbar-nav>li>a {
     text-align: center;
-    font-family: 'Play', sans-serif;
     letter-spacing: .1em;
     color:#fff;
     transition: 0.2s ease;
     text-shadow: 1px 3px 3px rgba(0,0,0,0.3);
+    border-radius: 0px 0px 7px 7px;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a:hover {
     background-color: white;
     color: #666;
-    letter-spacing: .2em;
+    transform: scale(1.05);
+    /*letter-spacing: .2em;*/
 }
 
 /*Active item on navbar*/
@@ -78,60 +89,90 @@ main {
     max-width: 100%;
 }
 
-
+/*Welcome text*/
 .jumbotron {
-    font-family: "Saira Semi Condensed",sans-serif;
     margin-top: 30px;
-    background-color: #e4e2b4;
-    background-image: url(../img/soldier.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
+}
+/*For transparent bg*/
+.jumbotron::after{
+    border-radius: 6px;
+    content: "";
+    background-color:#e4e2b4 ;
+    opacity: 0.90;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
-.container-fluid {
-    background-color: #e4e2b4;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-}
+.logo-icon {
+    display: inline-block;
+    background: #283227 url("../img/logo.svg") center/contain no-repeat;
+    background-origin: content-box;
+    padding: 7px;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
 
-h1 small {
-    color: #283227;
 }
 
 .jumbotron h1 {
     font-family: 'Anton', sans-serif;
-    letter-spacing: .1em;
+    letter-spacing: .3em;
+}
+
+.jumbotron h1 small{
+    letter-spacing: .05em;
+    color: #525c44;
+    font-family: 'Anton',sans-serif;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to bottom,#525c44 0,#283227 100%);
+    background-color: #525c44;
+    border-color: #283227;
+}
+
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    background-image: linear-gradient(to top,#525c44 0,#283227 100%);
+    background-position: center;
+    border-color: #283227;
+    background-color: transparent;
+}
+
+footer {
+    text-align: center;
+    background-image: -webkit-linear-gradient(left, #283227, #525c44 50%, #283227);
+    background-image: -o-linear-gradient(left, #283227, #525c44 50%, #283227);
+    background-image: linear-gradient(to right, #283227, #525c44 50%, #283227);
+    padding: 15px 0;
     color: white;
 }
 
-.container-fluid h1 {
-    font-family: 'Anton', sans-serif;
-    letter-spacing: .1em;
-    color: white;
+/*Itt kezdődjék László Bence kódja!*/
+#img-viewer {
+
 }
 
-@media (max-width: 995px) {
-    .jumbotron{
-        background-size: cover;
-    }
+.img-viewer-controller {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 2rem;
 }
 
-#icon {
-    vertical-align: bottom;
-    border: 4px white solid;
-    border-radius: 30px;
-    margin-right: 10px;
-}
 
-@media (max-width: 992px) {
-    .navbar-default .navbar-nav>li>a {
-        width: 100%;
-    }
 
-    #icon {
-        width: 80px;
-    }
+
+.container-fluid {
+    background-color: #e4e2b4;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
 }
 
 a:link {
@@ -148,34 +189,4 @@ a:hover {
 
 a:active {
   color: #bbb;
-}
-
-.btn-primary {
-    background-image: linear-gradient(to bottom,#525c44 0,#283227 100%);
-}
-
-#img-viewer {
-
-}
-
-.img-viewer-controller {
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    font-size: 2rem;
-}
-
-footer {
-    font-family: 'Roboto',sans-serif;
-    text-align: center;
-    background-image: linear-gradient(to right, #283227, #525c44 50%,#283227);
-    padding: 15px 0;
-    color: white;
-}
-
-.logo-icon {
-    box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
-    border: 2px solid white;
-    border-radius: 75px;
-
 }
