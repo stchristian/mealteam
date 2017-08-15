@@ -8,13 +8,16 @@ body{
     text-align: center;
 }
 
+main{
+    margin-top: 50px;
+}
 /* Styling the navigation bar*/
 .navbar-default{
     background-image: none;
     background-image: linear-gradient(to right, #384323, #6f8646 50%,#384323);
     background-color: #384323 ;
     box-shadow: 0 7px 1.5rem rgba(0,0,0,0.3);
-    border: none;
+    border-bottom: 1px solid #283227;
 }
 
 /*MEAL TEAM brand at the top left*/
@@ -57,13 +60,16 @@ body{
 }
 
 /*Image slider*/
+.carousel{
+    text-align: center;
+}
 .carousel-inner .item img{
-    height: 600px;
+    max-width: 100%;
 }
 
 
 .jumbotron{
-    margin-top: 80px;
+    margin-top: 30px;
     background-color: #c8c49d;
     background-image: url(../img/soldier.svg);
     background-size: contain;
@@ -101,9 +107,6 @@ h1 small{
     #icon{
         width: 80px;
     }
-}
-main {
-    margin-top: 200px;
 }
 
 a:link {
