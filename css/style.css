@@ -156,25 +156,6 @@ footer {
 }
 
 /*Itt kezdődjék László Bence kódja!*/
-#img-viewer {
-
-}
-
-.img-viewer-controller {
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    font-size: 2rem;
-}
-
-
-
-
-.container-fluid {
-    background-color: #e4e2b4;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-}
-
 a:link {
   color: #62753e;
 }
@@ -189,4 +170,25 @@ a:hover {
 
 a:active {
   color: #bbb;
+}
+
+#img-viewer {
+
+}
+
+.img-viewer-controller {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 2rem;
+}
+
+main .container-fluid, main .container {
+    background-color: #e4e2b4;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+}
+
+#btn-up {
+    border-radius: .5rem;
 }
