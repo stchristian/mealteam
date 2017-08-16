@@ -9,6 +9,7 @@
 
 /*camouflage background for body*/
 body {
+    color: #283227;
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-webkit-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
     background: -o-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-o-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent 10%),linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
@@ -18,6 +19,7 @@ body {
 main {
     margin-top: 51px;
 }
+
 
 /* Styling the navigation bar*/
 .navbar-default {
@@ -81,34 +83,29 @@ main {
     color:#fff;
 }
 
-/*Image slider*/
-.carousel {
-    text-align: center;
-}
-.carousel-inner .item img {
-    max-width: 100%;
+/*Main wrapper*/
+.wrapper {
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
+    border: #283227 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-/*Welcome text*/
-.jumbotron {
-    margin-top: 30px;
-    position: relative;
-    background-color: transparent;
-    box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
-}
-/*For transparent bg*/
-.jumbotron::after{
-    border-radius: 6px;
-    content: "";
-    background-color:#e4e2b4 ;
-    opacity: 0.90;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+/*Header element*/
+#header {
+    font-size: 4em;
+    line-height: 1.5;
+    /*font-size: 63px;*/
+    background-color:rgba(228, 226, 180, 1.0);
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .1em;
+    padding: 60px 60px;
+    margin: 0;
+    background-image: url(../img/soldier-army.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
 }
 
 .logo-icon {
@@ -117,14 +114,63 @@ main {
     background-origin: content-box;
     padding: 7px;
     border-radius: 5px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+
+}
+
+#header small {
+    letter-spacing: .05em;
+    color: #525c44;
+    font-family: 'Anton',sans-serif;
+}
+
+/*Image slider*/
+.carousel {
+    text-align: center;
+    border-top: #283227 1px solid;
+    border-bottom: #283227 1px solid;
+}
+.carousel-inner .item img {
+    max-width: 100%;
+}
+
+/*Welcome text*/
+#text{
+    background-color:rgba(228, 226, 180, 1.0);
+    font-size: 21px;
+    /*background-color: #283227;*/
+    /*color: rgba(228, 226, 180,1.0);*/
+    padding: 40px 60px;
+    margin: 0;
+    text-indent: 1.5em;
+}
+
+.panel{
+    background-color: #283227;
+    color: rgba(228, 226, 180,1.0);
+    margin-bottom: 0;
+}
+.jumbotron {
+    margin-top: 30px;
+    position: relative;
+    background-color:#283227;
+
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
+}
+
+
+
+.jumbotron .collapse.in{
 
 }
 
 .jumbotron h1 {
+    background-color:rgba(228, 226, 180,1.0);
     font-family: 'Anton', sans-serif;
-    letter-spacing: .3em;
+    letter-spacing: .2em;
 }
 
 .jumbotron h1 small{
