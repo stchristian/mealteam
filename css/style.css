@@ -1,24 +1,35 @@
 /*Itt kezdődjék Hübner Krisztián kódja!
  *Ha jobban megnézed a kód strukturált, kezdve az általános dolgokkal majd az oldalon fentről lefelé haladva
+ *Színek
+ *Sötét zöld: #283227; (szöveg szín)
+ *Hangyfasznyit világosabb: #525c44;
+ *Világos sárgás hányásszín: #e4e2b4 ( sötét szöveg háttérszíne)
  */
 
-/*Default font*/
-*{
+
+/*Default fonts, etc...*/
+* {
     font-family: 'Play',sans-serif;
+    color: #283227;
 }
 
-/*camouflage background for body*/
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Anton',sans-serif;
+}
+
+/*Camouflage background for body*/
 body {
-    color: #283227;
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-webkit-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
     background: -o-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-o-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent 10%),linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
 }
 
-/*Navbar is 50px +border*/
+/*Navbar is 50px + a bit space*/
 main {
-    margin-top: 51px;
+    margin-top: 60px;
 }
+
+
 
 /* Styling the navigation bar*/
 .navbar-default {
@@ -136,21 +147,39 @@ main {
 }
 
 /*Welcome text*/
-#text{
+#text {
+    position: relative;
     background-color:rgba(228, 226, 180, 1.0);
     font-size: 21px;
     /*background-color: #283227;*/
     /*color: rgba(228, 226, 180,1.0);*/
-    padding: 40px 60px;
+    padding: 30px 60px;
     margin: 0;
-    text-indent: 1.5em;
 }
 
-.panel{
-    background-color: #283227;
-    color: rgba(228, 226, 180,1.0);
-    margin-bottom: 0;
+#text p {
+    text-indent: 20px;
 }
+
+.tip {
+    font-size: 16px;
+    color: #e4e2b4 !important;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    text-align: center;
+    padding: 30px;
+    transform: rotate( -20deg);
+    background-image: url(../img/tip.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#text h2{
+    font-family: 'Anton',sans-serif;
+    margin-bottom: 30px;
+}
+
 .jumbotron {
     margin-top: 30px;
     position: relative;
@@ -160,9 +189,6 @@ main {
     -webkit-box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
 }
 
-.jumbotron .collapse.in{
-
-}
 
 .jumbotron h1 {
     background-color:rgba(228, 226, 180,1.0);
@@ -170,7 +196,7 @@ main {
     letter-spacing: .2em;
 }
 
-.jumbotron h1 small{
+.jumbotron h1 small {
     letter-spacing: .05em;
     color: #525c44;
     font-family: 'Anton',sans-serif;
@@ -182,7 +208,7 @@ main {
     border-color: #283227;
 }
 
-.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+.btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-image: linear-gradient(to top,#525c44 0,#283227 100%);
     background-position: center;
     border-color: #283227;
@@ -196,6 +222,27 @@ footer {
     background-image: linear-gradient(to right, #283227, #525c44 50%, #283227);
     padding: 15px 0;
     color: white;
+}
+
+/*Mobilméret*/
+@media (max-width: 768px) {
+    main {
+        margin-top: 50px;
+    }
+
+    main .container {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .wrapper {
+        border-radius: 0px;
+    }
+
+    #header {
+        padding: 30px 15px;
+        line-height: 1.1;
+    }
 }
 
 /*Itt kezdődjék László Bence kódja!*/
@@ -216,9 +263,9 @@ a:active {
 }
 
 main .container-fluid, main .container {
-    background-color: #e4e2b4;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-    border-radius: .5rem;
+    /*background-color: #e4e2b4;*/
+    /*box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);*/
+    /*border-radius: .5rem;*/
 }
 
 #btn-up {
