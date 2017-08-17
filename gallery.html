@@ -53,20 +53,20 @@
         </nav>
 
         <main>
-            <div class="container-fluid">
+            <div class="container-fluid" id="container-fluid-gallery">
                     <h1>Galéria</h1>
 
-                    <img src="#" alt="" id="img-viewer"></img>
+                    <img src="img/slider/1.jpg" alt="galéria" id="img-viewer"></img>
 
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <button class="btn btn-primary img-viewer-controller">
+                            <button onclick="previousPicture()" class="btn btn-primary img-viewer-controller">
                             Előző kép
                             </button>
                         </div>
 
                         <div class="col-sx-6 col-sm-6 col-md-6 col-lg-6">
-                            <button class="btn btn-primary img-viewer-controller">
+                            <button onclick="nextPicture()" class="btn btn-primary img-viewer-controller">
                                 Következő kép
                             </button>
                         </div>
@@ -75,27 +75,19 @@
 
                 <div class="row">
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img src="#" id="img-viewer-0" alt=""></img>
+                        <img onclick="" class="img-viewer-small" src="img/slider/2.jpg" id="img-viewer-0" alt=""></img>
                     </div>
 
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img src="#" id="img-viewer-1" alt=""></img>
+                        <img class="img-viewer-small" src="img/slider/3.jpg" id="img-viewer-1" alt=""></img>
                     </div>
 
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img src="#" id="img-viewer-2" alt=""></img>
+                        <img class="img-viewer-small" src="img/slider/4.jpg" id="img-viewer-2" alt=""></img>
                     </div>
 
                     <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img src="#" id="img-viewer-3" alt=""></img>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img src="#" id="img-viewer-4" alt=""></img>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img src="#" id="img-viewer-5" alt=""></img>
+                        <img class="img-viewer-small" src="img/slider/5.jpg" id="img-viewer-3" alt=""></img>
                     </div>
                 </div>
         </main>
@@ -113,5 +105,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!--custom scripts-->
         <script src="js/currentYear.js"></script>
+        <script src="js/gallery.js"></script>
     </body>
 </html>
