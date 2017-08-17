@@ -282,17 +282,22 @@ a:active {
   color: #bbb;
 }
 
+<<<<<<< HEAD
 main .container-fluid, main .container {
 
 }
 
 #btn-up {
+=======
+.index-info-block {
+    background-color: #e4e2b4;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+>>>>>>> 98495c0fe39eb1553da59772d4a41c924547d55a
     border-radius: .5rem;
 }
 
-.text {
+.index-info-text {
     font-size: 2rem;
-    //text-align: center;
     padding: 40px 60px;
     margin: 0;
     text-indent: 1.5em;
