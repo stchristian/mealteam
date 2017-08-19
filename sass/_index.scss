@@ -1,0 +1,12 @@
+@import "customVariables";
+.info-block {
+    background-color: $desert-yellow;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    p {
+        font-size: 2rem;
+        padding: 40px 60px;
+        margin: 0;
+        text-indent: 1.5em;
+    }
+}

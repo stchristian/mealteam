@@ -1,19 +1,13 @@
-/*Itt kezdődjék Hübner Krisztián kódja!
- *Ha jobban megnézed a kód strukturált, kezdve az általános dolgokkal majd az oldalon fentről lefelé haladva
- *Színek
- *Sötét zöld: #283227; (szöveg szín)
- *Hangyfasznyit világosabb: #525c44;
- *Világos sárgás hányásszín: #e4e2b4 ( sötét szöveg háttérszíne)
- */
-
+@import "customVariables";
+/*Hübner Krisztián
 
 /*Default fonts, etc...*/
 * {
     font-family: 'Play',sans-serif;
-    color: #283227;
+    color: $green-darker;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Anton',sans-serif;
 }
 
@@ -26,11 +20,11 @@ body {
 
 /* Styling the navigation bar*/
 .navbar-default {
-    background-image: -webkit-linear-gradient(left, #283227, #525c44 50%, #283227);
-    background-image: -o-linear-gradient(left, #283227, #525c44 50%, #283227);
-    background-image: linear-gradient(to right, #283227, #525c44 50%, #283227);
+    background-image: -webkit-linear-gradient(left, $green-darker, $green-dark 50%, $green-darker);
+    background-image: -o-linear-gradient(left, $green-darker, $green-dark 50%, $green-darker);
+    background-image: linear-gradient(to right, $green-darker, $green-dark 50%, $green-darker);
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-    border-bottom: 1px solid #283227;
+    border-bottom: 1px solid $green-darker;
 }
 
 /*MEAL TEAM brand at the top left*/
@@ -63,7 +57,6 @@ body {
 
 /*Navbar items*/
 .navbar-default .navbar-nav>li>a {
-    text-align: center;
     letter-spacing: .1em;
     color:#fff;
     transition: 0.2s ease;
@@ -90,7 +83,7 @@ body {
 #contentWrapper {
     margin: 70px auto 20px auto;
     box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
-    border: #283227 1px solid;
+    border: $green-darker 1px solid;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -114,7 +107,7 @@ body {
 
 .logo-icon {
     display: inline-block;
-    background: #283227 url("../img/logo.svg") center/contain no-repeat;
+    background: $green-darker url("../img/logo.svg") center/contain no-repeat;
     background-origin: content-box;
     padding: 7px;
     border-radius: 5px;
@@ -126,79 +119,25 @@ body {
 
 #header small {
     letter-spacing: .05em;
-    color: #525c44;
+    color: $green-dark;
     font-family: 'Anton',sans-serif;
 }
 
 /*Image slider*/
 #imageSlider {
     padding: 0px;
-    text-align: center;
-    border-top: #283227 1px solid;
-    border-bottom: #283227 1px solid;
+    border-top: $green-darker 1px solid;
+    border-bottom: $green-darker 1px solid;
 }
+
 #imageSlider .item img {
     max-width: 100%;
-}
-
-/*Welcome text*/
-#text {
-    position: relative;
-    background-color:rgba(228, 226, 180, 1.0);
-    font-size: 21px;
-    /*background-color: #283227;*/
-    /*color: rgba(228, 226, 180,1.0);*/
-    padding: 30px 60px;
-    margin: 0;
-}
-
-#text p {
-    text-indent: 20px;
-    text-align: justify;
-}
-
-.tip {
-    font-size: 16px;
-    color: #e4e2b4 !important;
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    text-align: center;
-    padding: 30px;
-    transform: rotate( -20deg);
-    background-image: url(../img/tip.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#text h2 {
-    font-family: 'Anton',sans-serif;
-    margin-bottom: 30px;
-}
-
-#collapseOne {
-    background-color: #283227;
-    padding: 30px 60px;
-}
-
-#collapseOne p {
-    font-size: 1.2em;
-    text-indent: 20px;
-    /*text-align: justify;*/
-    margin: 0;
-    padding: 0 0 10px;
-    color: #e4e2b4;
-}
-
-#collapseOne p::first-letter {
-    font-size: 1.4em;
 }
 
 .jumbotron {
     margin-top: 30px;
     position: relative;
-    background-color:#283227;
-
+    background-color:$green-darker;
     box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
     -webkit-box-shadow: 0px 0px 35px rgba(0,0,0,0.4);
 }
@@ -212,20 +151,20 @@ body {
 
 .jumbotron h1 small {
     letter-spacing: .05em;
-    color: #525c44;
+    color: $green-dark;
     font-family: 'Anton',sans-serif;
 }
 
 .btn-primary {
-    background-image: linear-gradient(to bottom,#525c44 0,#283227 100%);
-    background-color: #525c44;
-    border-color: #283227;
+    background-image: linear-gradient(to bottom,$green-dark 0,$green-darker 100%);
+    background-color: $green-dark;
+    border-color: $green-darker;
 }
 
 .btn-primary:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-image: linear-gradient(to top,#525c44 0,#283227 100%);
+    background-image: linear-gradient(to top,$green-dark 0,$green-darker 100%);
     background-position: center;
-    border-color: #283227;
+    border-color: $green-darker;
     background-color: transparent;
 }
 
@@ -234,10 +173,9 @@ body {
 }
 
 footer {
-    text-align: center;
-    background-image: -webkit-linear-gradient(left, #283227, #525c44 50%, #283227);
-    background-image: -o-linear-gradient(left, #283227, #525c44 50%, #283227);
-    background-image: linear-gradient(to right, #283227, #525c44 50%, #283227);
+    background-image: -webkit-linear-gradient(left, $green-darker, $green-dark 50%, $green-darker);
+    background-image: -o-linear-gradient(left, $green-darker, $green-dark 50%, $green-darker);
+    background-image: linear-gradient(to right, $green-darker, $green-dark 50%, $green-darker);
     padding: 15px 0;
     color: white;
 }
@@ -267,30 +205,17 @@ footer {
 
 /*Itt kezdődjék László Bence kódja!*/
 a:link {
-  color: #62753e;
+  color: $green-dark;
 }
 
 a:visited {
-  color: #666;
+  color: white;
 }
 
 a:hover {
-  color: #62753e;
+  color: $green-dark;
 }
 
 a:active {
-  color: #bbb;
-}
-
-.index-info-block {
-    background-color: #e4e2b4;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-    border-radius: .5rem;
-}
-
-.index-info-text {
-    font-size: 2rem;
-    padding: 40px 60px;
-    margin: 0;
-    text-indent: 1.5em;
+  color: white;
 }

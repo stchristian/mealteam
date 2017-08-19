@@ -21,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Play|Anton|Black+Ops+One|Saira+Semi+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
 
     <!--style-section-->
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/generic-min.css">
+    <link rel="stylesheet" type="text/css" href="css/index-min.css">
     </head>
 
     <body onload="currentYear()">
@@ -50,6 +51,7 @@
             </ul>
             </div>
         </nav>
+
         <main>
             <div class="container" id="contentWrapper">
                 <!-- Header -->
@@ -62,7 +64,7 @@
 
                 <!-- Image slider -->
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-xs" id="imageSlider">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-xs text-center" id="imageSlider">
                         <div id="carousel-example-generic" class="carousel slide " data-ride="carousel" data-interval="4000">
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
@@ -105,75 +107,76 @@
                     </div>
                 </div>
 
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 index-info-block">
-                        <h2 id="rules-section">Szabályzat</h2>
-                        <p class="index-info-text">Mint minden játéknak, az airsoftnak is vannak szabályai.</p>
-                        <div id="rules-section">
-                          <h4 role="tab" id="headingTwo">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="btn btn-primary">
-                              Szabályzat
-                            </a>
-                          </h4>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info-block">
+                    <h2 id="rules-section">Szabályzat</h2>
+                    <p>Mint minden játéknak, az airsoftnak is vannak szabályai.</p>
+                    <div id="rules-section">
+                      <h4 role="tab" id="headingTwo">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="btn btn-primary">
+                          Szabályzat
+                        </a>
+                      </h4>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                               <div class="panel-body">
-                                  <p class="index-info-text">§1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                  </div>
-                            </div>
+                                  <p>§1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 index-info-block">
-                        <div class="container-fluid" id="contact-section">
-                          <h2>Kapcsolat</h2>
-                          <div class="panel-body">
-                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4">
-                                <h3>Térkép</h3>
-                                <div id="map"></div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                <h2>Elérhetőségek</h2>
-                                <div class="col-xs-12 col-md-12">
-                                    <h3>Pálya címe</h3>
-                                    <p>3600 Ózd, Bolyki főút 64. (volt Ruhagyár épülete)</p>
-                                </div>
-                                <div class="col-xs-12 col-md-12">
-                                    <h3>Telefon</h3>
-                                    <p><a href="tel:+36305559492">+36 (30) 555-9492</a></p>
-                                    <p><a href="tel:+36306390398">+36 (30) 639-0398</a></p>
-                                </div>
-                                <div class="col-xs-12 col-md-12">
-                                    <h3><a target="_blank" href="https://www.facebook.com/mealteam01" hreflang="hu">Facebook</a></h3>
-                                </div>
-                            </div>
-
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                                <h3>Vedd fel velünk a kapcsolatot</h3>
-                                <form action="mailto:mealteam.airsoft@gmail.com" method="post">
-                                    <label>Név</label><br>
-                                    <input type="text" name="name" placeholder="Nevesincs Norbert"><br>
-                                    <label>E-mail cím</label><br>
-                                    <input type="email" name="email" placeholder="nevesincs@cimese.hu"><br>
-                                    <label>Tárgy</label><br>
-                                    <input type="text" name="subject" placeholder="Miről szeretnél beszélni?"><br>
-                                    <label for="message">Üzenet</label><br>
-                                    <textarea name="message" id="message" rows="8" cols="40" placeholder="Azért írok mert..."></textarea><br>
-                                    <button type="submit" class="btn btn-primary">Küldés</button>
-                                </form>
-                            </div>
-
-                            <button class="btn btn-primary">
-                                <a href="index.html" hreflang="hu">&uarr; Az oldal tetejére</a>
-                            </button>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 info-block">
+                    <div id="contact-section">
+                      <h2>Kapcsolat</h2>
+                      <div class="panel-body">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4">
+                            <h3>Térkép</h3>
+                            <div id="map"></div>
                         </div>
-                    </div>
-                </div><!-- Kapcsolat vége -->
 
-            <!-- </div> Container vége -->
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <h2>Elérhetőségek</h2>
+                            <div class="col-xs-12 col-md-12">
+                                <h3>Pálya címe</h3>
+                                <p>3600 Ózd, Bolyki főút 64. (volt Ruhagyár épülete)</p>
+                            </div>
+                            <div class="col-xs-12 col-md-12">
+                                <h3>Telefon</h3>
+                                <p><a href="tel:+36305559492">+36 (30) 555-9492</a></p>
+                                <p><a href="tel:+36306390398">+36 (30) 639-0398</a></p>
+                            </div>
+                            <div class="col-xs-12 col-md-12">
+                                <h3><a target="_blank" href="https://www.facebook.com/mealteam01" hreflang="hu">Facebook</a></h3>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+                            <h3>Vedd fel velünk a kapcsolatot</h3>
+                            <form action="mailto:mealteam.airsoft@gmail.com" method="post">
+                                <label>Név</label><br>
+                                <input type="text" name="name" placeholder="Nevesincs Norbert"><br>
+                                <label>E-mail cím</label><br>
+                                <input type="email" name="email" placeholder="nevesincs@cimese.hu"><br>
+                                <label>Tárgy</label><br>
+                                <input type="text" name="subject" placeholder="Miről szeretnél beszélni?"><br>
+                                <label for="message">Üzenet</label><br>
+                                <textarea name="message" id="message" rows="8" cols="40" placeholder="Azért írok mert..."></textarea><br>
+                                <button type="submit" class="btn btn-primary">Küldés</button>
+                            </form>
+                        </div>
+
+                        <button class="btn btn-primary">
+                            <a href="index.html" hreflang="hu">&uarr; Az oldal tetejére</a>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div><
+
+            </div>
         </main>
 
-        <footer class="container-fluid">
+        <footer class="container-fluid text-center">
           <div class="copyright">
             <span id="current-year"></span> &copy; MEAL Team Airsoft Sportegyesület
           </div>
