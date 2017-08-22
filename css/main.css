@@ -1,63 +1,4 @@
 @charset "UTF-8";
-.header {
-  background-color: #1e2210;
-  margin-top: 61px;
-  text-align: center;
-}
-
-.header h1 {
-  padding: 30px 0;
-  font-size: 5em;
-  letter-spacing: .2em;
-  color: #fff;
-  margin: 0;
-}
-
-.header .logo {
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  padding: 5px;
-  vertical-align: middle;
-  background-image: url(../img/logo.svg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  border-radius: 5px;
-  margin: 0 5px;
-}
-
-.header .right {
-  transform: scaleX(-1);
-}
-
-.intro {
-  padding: 20px;
-  font-size: 1.5em;
-}
-
-.navbar-brand {
-  font-family: "Black Ops One", sans-serif;
-  text-transform: uppercase;
-  font-size: 22px;
-  transform: rotate(-6deg);
-  transition: 0.2s ease;
-  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
-}
-
-.navbar-brand:hover {
-  transform: scale(1.2);
-}
-
-footer {
-  background-image: -webkit-linear-gradient(left, #1e2210, #31381b 50%, #1e2210);
-  background-image: -o-linear-gradient(left, #1e2210, #31381b 50%, #1e2210);
-  background-image: linear-gradient(to right, #1e2210, #31381b 50%, #1e2210);
-  padding: 15px 0;
-  color: #ffffff;
-}
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -4838,7 +4779,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent;
 }
 
@@ -7793,4 +7734,89 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+header {
+  background-color: #1e2210;
+  position: relative;
+  z-index: 150;
+  text-align: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  padding: 30px 0;
+  font-size: 5em;
+  letter-spacing: .2em;
+  color: #fff;
+  margin: 0;
+}
+
+header .logo {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  background-image: url(../img/logo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+header .right {
+  margin-left: -5px;
+  transform: scaleX(-1);
+}
+
+.introWrapper {
+  background-color: #1e2210;
+  color: #f2f1da;
+}
+
+.introText {
+  display: block;
+  box-sizing: border-box;
+  text-indent: 10px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 3vw;
+}
+
+.introText::first-letter {
+  font-size: 1.3em;
+}
+
+.introImg {
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .row.vertical-align {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar-brand {
+  font-family: "Black Ops One", sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  transition: 0.2s ease;
+  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-image: -webkit-linear-gradient(left, #1e2210, #31381b 50%, #1e2210);
+  background-image: -o-linear-gradient(left, #1e2210, #31381b 50%, #1e2210);
+  background-image: linear-gradient(to right, #1e2210, #31381b 50%, #1e2210);
+  padding: 15px 0;
+  color: #ffffff;
 }

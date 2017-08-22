@@ -1,10 +1,14 @@
-.header {
+
+
+header {
     background-color: $green-dark;
 
-    margin-top: $navbar-height + 1;
+    position: relative;
+    z-index: 150;
     text-align: center;
     h1 {
         // font-family: "Black Ops One";
+        text-transform: uppercase;
         padding: 30px 0;
         font-size: 5em;
         letter-spacing: .2em;
@@ -14,9 +18,8 @@
 
     .logo {
         display: inline-block;
-        width: 2em;
-        height: 2em;
-        padding: 5px;
+        width: 1em;
+        height: 1em;
         vertical-align: middle;
         background-image: url(../img/logo.svg);
         background-size: contain;
@@ -29,14 +32,39 @@
     }
 
     .right {
+        margin-left: -5px;
         transform: scaleX(-1);
     }
 
 }
 
-.intro {
-    padding: 20px;
-    font-size: 1.5em;
+.introWrapper {
+    background-color: $green-dark;
+    color: $desert-yellow;
+}
+
+.introText {
+    display: block;
+    box-sizing: border-box;
+    text-indent: 10px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 3vw;
+
+    &::first-letter{
+        font-size: 1.3em;
+    }
+}
+
+.introImg {
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .row.vertical-align {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .navbar-brand {
