@@ -1,0 +1,61 @@
+.header {
+    background-color: $green-dark;
+
+    margin-top: $navbar-height + 1;
+    text-align: center;
+    h1 {
+        // font-family: "Black Ops One";
+        padding: 30px 0;
+        font-size: 5em;
+        letter-spacing: .2em;
+        color:#fff;
+        margin: 0;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        padding: 5px;
+        vertical-align: middle;
+        background-image: url(../img/logo.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        border-radius: 5px;
+        margin: 0 5px;
+
+    }
+
+    .right {
+        transform: scaleX(-1);
+    }
+
+}
+
+.intro {
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.navbar-brand {
+    font-family: "Black Ops One", sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+    transform: rotate(-6deg);
+    transition: 0.2s ease;
+    text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
+}
+
+.navbar-brand:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-image: -webkit-linear-gradient(left, $green-dark, $green-darker 50%, $green-dark);
+    background-image: -o-linear-gradient(left, $green-dark, $green-darker 50%, $green-dark);
+    background-image: linear-gradient(to right, $green-dark, $green-darker 50%, $green-dark);
+    padding: 15px 0;
+    color: #ffffff;
+}

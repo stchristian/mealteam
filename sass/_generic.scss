@@ -1,16 +1,6 @@
 @import "customVariables";
 /*Hübner Krisztián
 
-/*Default fonts, etc...*/
-* {
-    font-family: 'Play',sans-serif;
-    color: $green-darker;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Anton',sans-serif;
-}
-
 /*Camouflage background for body*/
 body {
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), transparent 10%),-webkit-linear-gradient(right, rgba(0, 0, 0, 0.3), transparent 10%),url("../img/camouflage.jpeg") center/cover no-repeat fixed;
