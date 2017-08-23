@@ -1,69 +1,117 @@
 
 
-header {
-    background-color: $green-dark;
+.jumbotron {
+    text-align: right;
+    margin-bottom: 0;
 
-    position: relative;
-    z-index: 150;
-    text-align: center;
     h1 {
-        // font-family: "Black Ops One";
-        text-transform: uppercase;
-        padding: 30px 0;
-        font-size: 5em;
-        letter-spacing: .2em;
-        color:#fff;
-        margin: 0;
-    }
+        margin-right: 15%;
 
-    .logo {
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        vertical-align: middle;
-        background-image: url(../img/logo.svg);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-origin: content-box;
-        border-radius: 5px;
-        margin: 0 5px;
-
-    }
-
-    .right {
-        margin-left: -5px;
-        transform: scaleX(-1);
-    }
-
-}
-
-.introWrapper {
-    background-color: $green-dark;
-    color: $desert-yellow;
-}
-
-.introText {
-    display: block;
-    box-sizing: border-box;
-    text-indent: 10px;
-    font-size: 1.2em;
-    line-height: 1.5;
-    padding: 3vw;
-
-    &::first-letter{
-        font-size: 1.3em;
+        img {
+            position: relative;
+            left: -20px;
+            top: -20px;
+            height: 2.0em;
+            vertical-align: middle;
+        }
     }
 }
 
-.introImg {
-    border-radius: 10px;
+.marginTop {
+    margin-top: $navbar-height;
+}
+
+.fixedTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#imgSlider {
+    width: 100%;
+    height: 350px;
+    font-size: 5em;
+
+    background-color: $color-primary-2;
+    h1 {
+        margin-top: 170px;
+    }
+    overflow: auto;
+    text-align: center;
+}
+
+#introWrapper {
+    background-color: $color-primary-3;
+
+    .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .introText p {
+            text-indent: 10px;
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin-bottom: 0;
+            color: $color-primary-1;
+
+            &::first-letter{
+                font-size: 1.3em;
+            }
+        }
+
+
+
+        &:nth-child(even) {
+            .introText p {
+                padding-right: 15px;
+                margin-right: 15px;
+                text-align: right;
+                border-right: 2px solid $color-primary-1;
+            }
+        }
+
+        &:nth-child(odd) {
+            .introText p {
+                padding-left: 15px;
+                margin-left: 15px;
+                border-left: 2px solid $color-primary-1;
+            }
+        }
+    }
+}
+
+#applyWrapper {
+    width: 100%;
+    height: 400px;
+    background-color: lighten($color-primary-2, 20%);
 }
 
 @media (min-width: 768px) {
     .row.vertical-align {
         display: flex;
         align-items: center;
+    }
+}
+
+#contactWrapper {
+    background-color: $color-primary-0;
+    color: $color-primary-1 !important;
+
+    h2, h3 {
+        color: $color-primary-1 !important;;
+    }
+
+    a {
+        color: $color-primary-1 !important;
     }
 }
 
@@ -81,9 +129,7 @@ header {
 }
 
 footer {
-    background-image: -webkit-linear-gradient(left, $green-dark, $green-darker 50%, $green-dark);
-    background-image: -o-linear-gradient(left, $green-dark, $green-darker 50%, $green-dark);
-    background-image: linear-gradient(to right, $green-dark, $green-darker 50%, $green-dark);
+    background-color: $color-primary-3;
     padding: 15px 0;
     color: #ffffff;
 }
