@@ -20,10 +20,14 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Play|Anton|Black+Ops+One|Saira+Semi+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous|Teko:400,500&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
     </head>
 
-    <body onload="currentYear()">
+    <body onload="currentYear(); mapLoader();">
 
         <!-- Navigation bar -->
         <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
@@ -48,21 +52,58 @@
                       <li><a href="index.html#rules-section" hreflang="hu">Airsoft Szabályzat</a></li>
                       <li><a href="index.html#contact-section" hreflang="hu">Kapcsolat</a></li>
                     </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html#join-game">Jelentkezz játékra!</a></li>
-                    </ul>
                 </div>
 
             </div>
         </nav>
 
-        <div class="jumbotron">
-            <h1><img src="img/logo.svg" alt=""> Meal Team Airsoft Sportegyesület</h1>
-        </div>
+        <header>
+            <div id="headerWrapper">
+                <div class="container">
+                    <div class="row vertical-align">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                            <div id="header">
+                                <span class="logo"></span><h1>Meal Team <br>Airsoft</h1>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                            <div class="countdown-timer">
+                                <h3>A következő játék
+                                    <div class="main-timer">
+                                      <div class="timer-block">
+                                        <span id="days"></span>
+                                        <div class="timer-text">
+                                          Nap
+                                        </div>
+                                      </div><div class="timer-block">
+                                        <span id="hours"></span>
+                                        <div class="timer-text">
+                                          Óra
+                                        </div>
+                                      </div><div class="timer-block">
+                                        <span id="minutes"></span>
+                                        <div class="timer-text">
+                                          Perc
+                                        </div>
+                                      </div>
+                                    </div>
+                                múlva kezdődik</h3>
+                                <button class="btn btn-primary"id="subscribe-button" type="button" value="">Jelentkezés</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
 
         <div id="imgSlider">
             <h1>&ltImage Slider&gt</h1>
+        </div>
+
+        <div id="afterSlider">
+
         </div>
 
         <section>
@@ -209,7 +250,10 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!--custom scripts-->
-        <script src="js/currentYear.js"></script>
-        <script src="js/mapLoader.js"></script>
+        <script async defer src="js/currentYear.js"></script>
+        <script async defer src="js/mapLoader.js"></script>
+        <script async defer src="js/timer.js">
+
+        </script>
     </body>
 </html>

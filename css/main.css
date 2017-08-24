@@ -1380,7 +1380,7 @@ html {
 }
 
 body {
-  font-family: "Play", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1480,7 +1480,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Teko";
+  font-family: "Russo One";
   font-weight: 500;
   line-height: 1.1;
   color: #203312;
@@ -4778,7 +4778,7 @@ tbody.collapse.in {
 
 .navbar {
   position: relative;
-  min-height: 70px;
+  min-height: 50px;
   margin-bottom: 0;
   border: 1px solid transparent;
 }
@@ -4927,10 +4927,10 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 25px 15px;
+  padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
-  height: 70px;
+  height: 50px;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -4953,8 +4953,8 @@ tbody.collapse.in {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -4983,7 +4983,7 @@ tbody.collapse.in {
 }
 
 .navbar-nav {
-  margin: 12.5px -15px;
+  margin: 7.5px -15px;
 }
 
 .navbar-nav > li > a {
@@ -5023,8 +5023,8 @@ tbody.collapse.in {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -5036,8 +5036,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
@@ -5128,23 +5128,23 @@ tbody.collapse.in {
 }
 
 .navbar-btn {
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .navbar-text {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
@@ -5169,16 +5169,16 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: #203312;
-  border-color: #111a09;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-default .navbar-brand {
-  color: #E2F1D7;
+  color: #ffffff;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #c7e4b1;
+  color: #e6e6e6;
   background-color: transparent;
 }
 
@@ -5187,17 +5187,17 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #E2F1D7;
+  color: #ffffff;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #abd78b;
+  color: #cccccc;
   background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #abd78b;
-  background-color: #203312;
+  color: #cccccc;
+  background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
@@ -5219,25 +5219,25 @@ tbody.collapse.in {
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #111a09;
+  border-color: transparent;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #203312;
-  color: #abd78b;
+  background-color: transparent;
+  color: #cccccc;
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #E2F1D7;
+    color: #ffffff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #abd78b;
+    color: #cccccc;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #abd78b;
-    background-color: #203312;
+    color: #cccccc;
+    background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
@@ -5246,19 +5246,19 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-link {
-  color: #E2F1D7;
+  color: #ffffff;
 }
 
 .navbar-default .navbar-link:hover {
-  color: #abd78b;
+  color: #cccccc;
 }
 
 .navbar-default .btn-link {
-  color: #E2F1D7;
+  color: #ffffff;
 }
 
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #abd78b;
+  color: #cccccc;
 }
 
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
@@ -6909,7 +6909,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Play", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7043,7 +7043,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Play", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7736,32 +7736,143 @@ button.close {
   }
 }
 
-.jumbotron {
-  background-image: url(../img/soldier.svg), url(../img/camouflage.jpg);
-  background-repeat: no-repeat,no-repeat;
-  background-position: 80% bottom, center;
-  background-size: contain,cover;
-  background-attachment: scroll, fixed;
-  height: 500px;
-  margin-top: 70px;
+.navbar-brand {
+  font-family: "Black Ops One", sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  transform: rotate(-6deg);
+  transition: 0.2s ease;
+  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
+.navbar-default .navbar-nav > li > a {
+  text-align: center;
+  transition: 0.2s ease;
+  font-family: 'Russo One',sans-serif;
+  letter-spacing: 2px;
+  border-radius: 0 0 6px 6px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #fff;
+  color: #203312;
+}
+
+.navbar-default {
+  background-image: linear-gradient(to right, #112006, #2c4619 50%, #112006);
+}
+
+#headerWrapper {
+  background-image: url(../img/camouflage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 50px;
   border-bottom: 10px solid #203312;
-  margin-bottom: 0;
-  padding-top: 117px;
 }
 
-.jumbotron h1 {
-  margin-left: 10vw;
-  font-size: 6em;
+#headerWrapper #header {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
-.jumbotron h1 img {
-  position: relative;
-  height: 2.0em;
-  vertical-align: middle;
+#headerWrapper .logo {
+  display: inline-block;
+  height: 140px;
+  width: 140px;
+  background-image: url(../img/logo.svg);
+  background-size: contain;
+  background-color: #203312;
+  padding: 10px;
+  background-origin: content-box;
+  border-radius: 70px;
+  border: 4px solid #E2F1D7;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#headerWrapper .row {
+  padding: 30px 0;
+}
+
+#headerWrapper h1 {
+  display: inline-block;
+  font-size: 58px;
+  margin: 0;
+  color: #E2F1D7;
+  text-align: center;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+  #headerWrapper h1 {
+    text-align: left;
+  }
+  #headerWrapper .row {
+    padding: 70px 0;
+  }
+  #headerWrapper #header {
+    border-bottom: 8px solid #E2F1D7;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #headerWrapper h1 {
+    font-size: 68px;
+  }
+}
+
+.countdown-timer {
+  background-color: rgba(40, 45, 52, 0.7);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: #E2F1D7;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 15px;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-timer h3 {
+  color: #E2F1D7;
+}
+
+.countdown-timer .main-timer {
+  margin: 15px 20px;
+  padding: 10px;
+  background-color: #596d30;
+  border-radius: 30px;
+  box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+}
+
+.countdown-timer .timer-block {
+  width: 33%;
+  display: inline-block;
+}
+
+.countdown-timer .timer-block:not(:first-child) {
+  border-left: 4px white solid;
+}
+
+#days, #hours, #minutes {
+  font-size: 40px;
+  font-family: 'Orbitron';
+  display: inline-block;
+  padding: 10px 0;
 }
 
 .marginTop {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .fixedTop {
@@ -7774,13 +7885,21 @@ button.close {
   width: 100%;
   height: 350px;
   font-size: 5em;
-  background-color: #89B369;
-  overflow: auto;
   text-align: center;
+  overflow: auto;
 }
 
 #imgSlider h1 {
   margin-top: 170px;
+}
+
+#afterSlider {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/soldiers.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #introWrapper {
@@ -7850,19 +7969,6 @@ button.close {
 
 #contactWrapper a {
   color: #E2F1D7 !important;
-}
-
-.navbar-brand {
-  font-family: "Black Ops One", sans-serif;
-  text-transform: uppercase;
-  font-size: 22px;
-  transform: rotate(-6deg);
-  transition: 0.2s ease;
-  text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
-}
-
-.navbar-brand:hover {
-  transform: scale(1.2);
 }
 
 footer {
