@@ -10,3 +10,12 @@
 .navbar-brand:hover {
     transform: scale(1.2);
 }
+
+.navbar-default .navbar-nav > li > a {
+    transition: 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: $color-primary-1;
+    color: $color-primary-4;
+}
