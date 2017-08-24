@@ -11,9 +11,12 @@ $color-primary-2: #89B369;
 $color-primary-3: #203312;
 $color-primary-4: #112006;
 
+
 $greyish: rgb(40,45,52);
 
-$navbar-bg-color: $color-primary-3;
+$navbar-default-bg-image: linear-gradient(to right, $color-primary-4, lighten($color-primary-3,5%) 50%, $color-primary-4) !default;
+$navbar-bg-color: transparent;
+$navbar-default-link-color: #ffffff;
 $navbar-height: 50px !default;
 
 
@@ -393,7 +396,7 @@ $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $color-primary-1 !default;
 $navbar-default-bg:                $navbar-bg-color !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-border:            transparent !default;
 
 // Navbar links
 $navbar-default-link-color:                $color-primary-1 !default;

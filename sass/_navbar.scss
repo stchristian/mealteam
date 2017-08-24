@@ -12,10 +12,18 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-    transition: 0.3s ease;
+    text-align: center;
+    transition: 0.2s ease;
+    font-family: 'Russo One',sans-serif;
+    letter-spacing: 2px;
+    border-radius: 0 0 6px 6px;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
-    background-color: $color-primary-1;
-    color: $color-primary-4;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #fff;
+    color: $color-primary-3;
+}
+
+.navbar-default {
+    background-image: $navbar-default-bg-image;
 }
