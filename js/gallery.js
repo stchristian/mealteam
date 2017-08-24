@@ -1,40 +1,46 @@
 var album1 = ["img/slider/1.jpg", "img/slider/2.jpg", "img/slider/3.jpg", "img/slider/4.jpg", "img/slider/5.jpg", "img/slider/6.jpg", "img/slider/7.jpg", "img/slider/8.jpg", "img/slider/9.jpg"];
-//var album2 = [];
-//var album3 = [];
 var selectedAlbum = album1;
-var selectedPictureIndex = 0;
+var viewerElements = ['img-viewer', 'img-viewer-1', 'img-viewer-2', 'img-viewer-3'];
+var selectedPictureIndex = [0, 1, 2, 3];
 
-/*function selectAlbum(selectedID) {
-    selectedAlbumID = document.getElementById('selectedID');
-    var imgViewer = document.getElementById('img-viewer');
-    var newPicture = selectedAlbum[0];
-    imgViewer.setAttribute("src", "newPicture");
-
-    var imgViewerThumbnails = [];
-    var imgViewerThumbnails = [];
-    for(i = 0; i < 6; i++) {
-        imgViewerThumbnails[i].setAttribute("src", "newPicture");
+function nextPicture(elementId, pictureIndex) {
+    var imgViewer = document.getElementById(elementId);
+    if (selectedPictureIndex[pictureIndex] < (selectedAlbum.length - 1)) {
+        selectedPictureIndex[pictureIndex]++;
+        var newPicture = selectedAlbum[selectedPictureIndex[pictureIndex]];
+        imgViewer.setAttribute("src", newPicture);
+    } else if (selectedPictureIndex[0] == (selectedAlbum.length - 1)) {
+        var errorBlock = document.getElementById('gallery-error');
+        errorBlock.innerHTML = "Ez az utolsó kép az albumban.";
+        setTimeout(function() {
+            errorBlock.innerHTML = "";
+        }, 2000);
     }
 }
 
-function selectPicture() {
-
-}*/
-
-function nextPicture() {
-    var imgViewer = document.getElementById('img-viewer');
-    if (selectedPictureIndex < selectedAlbum.length - 1) {
-        selectedPictureIndex++;
-        var newPicture = selectedAlbum[selectedPictureIndex];
+function previousPicture(elementId, pictureIndex) {
+    var imgViewer = document.getElementById(elementId);
+    if (selectedPictureIndex[pictureIndex] > 0) {
+        selectedPictureIndex[pictureIndex]--;
+        var newPicture = selectedAlbum[selectedPictureIndex[pictureIndex]];
         imgViewer.setAttribute("src", newPicture);
+    } else if (selectedPictureIndex[0] == 0) {
+        var errorBlock = document.getElementById('gallery-error');
+        errorBlock.innerHTML = "Ez az első kép az albumban."
+        setTimeout(function() {
+            errorBlock.innerHTML = "";
+        }, 2000);
     }
 }
 
-function previousPicture() {
-    var imgViewer = document.getElementById('img-viewer');
-    if (selectedPictureIndex > 0) {
-        selectedPictureIndex--;
-        var newPicture = selectedAlbum[selectedPictureIndex];
-        imgViewer.setAttribute("src", newPicture);
+function nextView() {
+    for (i = 0; i < viewerElements.length; i++) {
+        nextPicture(viewerElements[i], selectedPictureIndex[i]);
+    }
+}
+
+function previousView() {
+    for (i = 0; i < viewerElements.length; i++) {
+        previousPicture(viewerElements[i], selectedPictureIndex[i]);
     }
 }
