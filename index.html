@@ -20,6 +20,10 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Play|Anton|Black+Ops+One|Saira+Semi+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous|Teko:400,500&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Rubik:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
     </head>
 
@@ -48,21 +52,55 @@
                       <li><a href="index.html#rules-section" hreflang="hu">Airsoft Szabályzat</a></li>
                       <li><a href="index.html#contact-section" hreflang="hu">Kapcsolat</a></li>
                     </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Jelentkezz játékra!</a></li>
-                    </ul>
                 </div>
 
             </div>
         </nav>
 
-        <div class="jumbotron">
-            <h1><img src="img/logo.svg" alt=""> Meal Team Airsoft Sportegyesület</h1>
-        </div>
+        <header>
+            <div id="headerWrapper">
+                <div class="container">
+                    <div class="row vertical-align">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7" id="header"><h1>Meal Team Airsoft<br>Sportegyesület</h1>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                            <div class="countdown-timer">
+                                <h2>A következő játék</h2>
+                                <div class="main-timer">
+                                  <div class="timer-block">
+                                    <span id="days"></span>
+                                    <div class="timer-text">
+                                      Nap
+                                    </div>
+                                  </div><div class="timer-block">
+                                    <span id="hours"></span>
+                                    <div class="timer-text">
+                                      Óra
+                                    </div>
+                                  </div><div class="timer-block">
+                                    <span id="minutes"></span>
+                                    <div class="timer-text">
+                                      Perc
+                                    </div>
+                                  </div>
+                                </div>
+                                <p>múlva kezdődik.</p>
+                                <button class="btn btn-primary"id="subscribe-button" type="button" value="">Jelentkezés</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
 
         <div id="imgSlider">
             <h1>&ltImage Slider&gt</h1>
+        </div>
+
+        <div id="afterSlider">
+
         </div>
 
         <section>
@@ -211,5 +249,8 @@
         <!--custom scripts-->
         <script src="js/currentYear.js"></script>
         <script src="js/mapLoader.js"></script>
+        <script src="js/timer.js">
+
+        </script>
     </body>
 </html>

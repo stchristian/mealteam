@@ -1,0 +1,57 @@
+#headerWrapper {
+    background-image: url(../img/camouflage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+
+    margin-top: $navbar-height;
+    border-bottom: 10px solid $color-primary-3;
+
+    .row {
+        padding: 70px 0;
+    }
+
+    h1 {
+        margin: 0;
+        color: $color-primary-1;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        h1 {
+            font-size: $jumbotron-heading-font-size;
+        }
+    }
+
+
+
+    .countdown-timer{
+
+        h2 {
+            color: $color-primary-1;
+        }
+
+        background-color:rgba(40,45,52, 0.7);
+        color: $color-primary-1;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 15px;
+        font-family: "Russo One";
+        letter-spacing: 4px;
+        word-spacing: 5px;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
+        .timer-block {
+            width: 33%;
+            display: inline-block;
+        }
+    }
+
+    #days, #hours, #minutes{
+      font-size: 40px;
+      font-family: 'Orbitron';
+      display: inline-block;
+      padding: 10px 0;
+    }
+
+}
