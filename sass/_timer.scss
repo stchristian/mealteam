@@ -39,11 +39,21 @@
     }
 
     #idopont {
+
         padding: 10px 0;
         background-color: $color-primary-1;
-        h4 {
+        h3 {
             color: $color-primary-3;
         }
+    }
+
+    a {
+        border: 2px solid $color-primary-4;
+        border-radius: 8px;
+        padding: 9px 13px;
+        color: $color-primary-4;
+        display: inline-block;
+        background-color: $color-primary-1;
     }
 }
 
