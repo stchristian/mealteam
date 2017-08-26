@@ -1,0 +1,63 @@
+@import "navbar";
+@import "header";
+@import "timer";
+@import "intro";
+@import "footer";
+
+.marginTop {
+    margin-top: $navbar-height;
+}
+
+.fixedTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#imgSlider {
+    width: 100%;
+    height: 350px;
+    font-size: 5em;
+    text-align: center;
+    // background-color: $color-primary-2;
+    h1 {
+        margin-top: 170px;
+    }
+    overflow: auto;
+}
+
+#afterSlider {
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/soldiers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#applyWrapper {
+    width: 100%;
+    height: 400px;
+    background-color: lighten($color-primary-2, 20%);
+}
+
+@media (min-width: 768px) {
+    .row.vertical-align {
+        display: flex;
+        align-items: center;
+    }
+}
+
+#contactWrapper {
+    background-color: $color-primary-0;
+    color: $color-primary-1 !important;
+
+    h2, h3 {
+        color: $color-primary-1 !important;;
+    }
+
+    a {
+        color: $color-primary-1 !important;
+    }
+}

@@ -1,0 +1,36 @@
+@import "customVariables";
+#container-fluid-gallery {
+    background-color: $color-primary-0;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    padding-bottom: 3rem;
+    overflow: hidden;
+}
+
+#gallery {
+}
+
+#img-viewer {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-viewer-small {
+    width: 100%;
+    height: auto;
+}
+
+.img-viewer-controller {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 2rem;
+}
+
+#gallery-error {
+    background-color: red;
+    color: white;
+    width: 100%;
+}

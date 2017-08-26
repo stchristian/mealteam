@@ -1,0 +1,55 @@
+.countdown-timer{
+    margin: 0 auto;
+    max-width: 500px;
+
+
+
+    h5 {
+
+        color: $color-primary-1;
+
+        font-size: 1.2em;
+
+    }
+    font-family: 'Russo One',sans-serif;
+    background-color:rgba(40,45,52, 0.7);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    color: $color-primary-1;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 30px 30px;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
+    .main-timer {
+        margin: 15px 20px;
+        padding: 10px;
+        background-color:rgba(89, 109, 48, 1.0);
+        border-radius: 30px;
+        box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.5);
+        text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.7);
+    }
+    .timer-block {
+        width: 33%;
+        display: inline-block;
+    }
+
+    .timer-block:not(:first-child){
+      border-left: 4px white solid;
+    }
+
+    #idopont {
+        padding: 10px 0;
+        background-color: $color-primary-1;
+        h4 {
+            color: $color-primary-3;
+        }
+    }
+}
+
+#days, #hours, #minutes{
+  font-size: 40px;
+  font-family: 'Orbitron';
+  display: inline-block;
+  padding: 10px 0;
+}
