@@ -7968,6 +7968,30 @@ button.close {
   z-index: -1;
 }
 
+#contactWrapper {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 50%, rgba(0, 0, 0, 0.3));
+  background-color: #425A31;
+  color: #E2F1D7 !important;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#contactWrapper h2, #contactWrapper h3 {
+  color: #E2F1D7 !important;
+}
+
+#contactWrapper a {
+  color: #E2F1D7 !important;
+}
+
+#contactWrapper input, #contactWrapper textarea {
+  color: #112006;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
 footer {
   background-image: linear-gradient(to right, #112006, #2c4619 50%, #112006);
   padding: 15px 0;
@@ -8016,22 +8040,4 @@ footer {
     display: flex;
     align-items: center;
   }
-}
-
-#contactWrapper {
-  background-color: #425A31;
-  color: #E2F1D7 !important;
-}
-
-#contactWrapper h2, #contactWrapper h3 {
-  color: #E2F1D7 !important;
-}
-
-#contactWrapper a {
-  color: #E2F1D7 !important;
-}
-
-#map {
-  width: 100%;
-  height: 300px;
 }
