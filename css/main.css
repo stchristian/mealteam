@@ -8030,3 +8030,8 @@ footer {
 #contactWrapper a {
   color: #E2F1D7 !important;
 }
+
+#map {
+  width: 100%;
+  height: 300px;
+}
