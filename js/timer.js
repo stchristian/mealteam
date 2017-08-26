@@ -1,4 +1,30 @@
-var countDownDate =  new Date("2017/10/30").getTime();
+var dateObject = new Date("2017/10/30");
+var countDownDate =  dateObject.getTime();
+var weekdays = [
+    "hétfő",
+    "kedd",
+    "szerda",
+    "csütörtök",
+    "péntek",
+    "szombat",
+    "vasárnap",
+];
+var months = [
+    "január",
+    "február",
+    "március",
+    "április",
+    "május",
+    "június",
+    "július",
+    "augusztus",
+    "szeptember",
+    "október",
+    "november",
+    "december"
+]
+
+document.getElementById("gameDate").innerHTML = months[dateObject.getMonth()] + " " + dateObject.getDate() + ". " + weekdays[dateObject.getDay()];
 
 function getRemainingTime(){
   var now = new Date().getTime();
@@ -32,14 +58,3 @@ function updateCountdownTimer(){
 
 updateCountdownTimer();
 var countdownTimer = setInterval(updateCountdownTimer,1000);
-
-var itemsShowed = false;
-function showMenuItems(){
-  if(itemsShowed){
-    document.querySelector(".navbar-wrapper").style.height = "500px";
-    document.querySelector(".navbar").style.display = "block";
-    document.querySelector(".navbar a").style.display = "block";
-    itemsShowed = true;
-    console.log("ASD");
-  }
-}
