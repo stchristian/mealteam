@@ -1,6 +1,4 @@
 #introWrapper {
-    background-image: $navbar-default-bg-image;
-
     position: relative;
 
     .container {
@@ -23,12 +21,17 @@
             margin-bottom: 0;
             color: $color-primary-1;
             letter-spacing: .05em;
+            text-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 
             &::first-letter{
                 font-size: 1.3em;
             }
         }
 
+        img {
+            display: block;
+            box-shadow: 3px 3px 7px rgba(0,0,0,0.5);
+        }
 
 
         &:nth-child(even) {
@@ -49,6 +52,17 @@
         }
     }
 
+    &::before {
+        content : "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: $navbar-default-bg-image;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+    }
     &::after {
         content : "";
         display: block;
@@ -64,7 +78,6 @@
         width: 100%;
         height: 100%;
         opacity : 0.16;
-
-        // z-index: -1;
+        z-index: -1;
     }
 }

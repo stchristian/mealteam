@@ -7760,11 +7760,13 @@ button.close {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover {
   background-color: #fff;
   color: #203312;
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-default {
   background-image: linear-gradient(to right, #112006, #2c4619 50%, #112006);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  border: none !important;
 }
 
 #headerWrapper {
@@ -7887,7 +7889,6 @@ button.close {
 }
 
 #introWrapper {
-  background-image: linear-gradient(to right, #112006, #2c4619 50%, #112006);
   position: relative;
 }
 
@@ -7912,10 +7913,16 @@ button.close {
   margin-bottom: 0;
   color: #E2F1D7;
   letter-spacing: .05em;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
 }
 
 #introWrapper .row .introText p::first-letter {
   font-size: 1.3em;
+}
+
+#introWrapper .row img {
+  display: block;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
 }
 
 #introWrapper .row:nth-child(even) .introText p {
@@ -7929,6 +7936,18 @@ button.close {
   padding-left: 15px;
   margin-left: 15px;
   border-left: 2px solid #E2F1D7;
+}
+
+#introWrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #112006, #2c4619 50%, #112006);
+  width: 100%;
+  height: 100%;
+  z-index: -2;
 }
 
 #introWrapper::after {
@@ -7946,6 +7965,7 @@ button.close {
   width: 100%;
   height: 100%;
   opacity: 0.16;
+  z-index: -1;
 }
 
 footer {
