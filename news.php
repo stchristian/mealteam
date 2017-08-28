@@ -3,7 +3,7 @@
     <head>
     <!--meta-section-->
     <title>Meal Team Airsoft | Hírek</title>
-    <meta charset="utf-8">
+    <meta charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Az ózdi airsoft sportegyesület honlapja. Hírek.">
@@ -16,6 +16,7 @@
 
     <!--Custom Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/news.css">
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Orbitron|Roboto|Russo+One&amp;subset=latin-ext" rel="stylesheet">
@@ -54,13 +55,39 @@
         </nav>
 
         <main>
+            <div class="container-fluid" id="newsWrapper">
+            <?php
+                header("Content-type: text/html; charset=utf-8");
+
+                $host = "localhost";
+                $username = "root";
+                $password = "";
+                $database = "test";
+
+                $connection = mysqli_connect($host, $username, $password, $database);
+                if (!$connection) {
+                    echo "Hiba: nem sikerült csatlakozni a MySQL adatbázishoz." . PHP_EOL;
+                    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+                    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+                    exit;
+                }
+
+                $sql = 'SELECT * FROM posts';
+                mysqli_set_charset($connection,"utf8");
+                $query = mysqli_query($connection, $sql);
+                while ($row = mysqli_fetch_array($query))
+                {
+                    echo '<div><h2>' . $row['title'] . '<br><small>' . $row['date'] . ' | ' . $row['user'] . '</small></h2><article>' . $row["post"] . '<article></div>';
+                }
+
+                mysqli_close($connection);
+             ?>
+         </div>
         </main>
 
         <footer class="container-fluid">
             <div class="copyright">
               <span id="current-year"></span> &copy; Meal Team Airsoft Sportegyesület
-            </div>
-            <div id="gallery-error">
             </div>
         </footer>
 
