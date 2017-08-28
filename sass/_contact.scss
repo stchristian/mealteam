@@ -1,5 +1,21 @@
 #contactWrapper {
-    background-color: darken($color-primary-2, 20%);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 50%, rgba(0, 0, 0, 0.3));
+    background-color: $color-primary-0;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+
+    #contact-section > h2 {
+        border-bottom: 4px solid $color-primary-1;
+        padding: 10px;
+    }
+
+    * {
+        color: $color-primary-1;
+    }
+
+    input, textarea {
+        color: $color-primary-4;
+    }
+
 }
 
 #facebook-widget {
