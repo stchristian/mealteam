@@ -2,22 +2,20 @@
 <html lang="hu">
     <head>
     <!--meta-section-->
-    <title>Meal Team Airsoft | Galéria</title>
+    <title>Meal Team Airsoft | Hírek</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Az ózdi airsoft sportegyesület honlapja. Galéria, képek.">
+    <meta name="description" content="Az ózdi airsoft sportegyesület honlapja. Hírek.">
     <meta name="author" content="László Bence, Hübner Krisztián">
-    <meta name="keywords" content="airsoft,sport,mealteam,ózd,sportegyesület,csapatjáték,galéria,képek">
+    <meta name="keywords" content="airsoft,sport,mealteam,ózd,sportegyesület,csapatjáték,hírek">
     <!--facebook-meta-->
     <meta property="og:title" content="Meal Team Airsoft">
     <meta property="og:image" content="img/mealteam-icon.png">
-    <meta property="og:description" content="Az ózdi airsoft sportegyesület honlapja. Galéria, képek.">
+    <meta property="og:description" content="Az ózdi airsoft sportegyesület honlapja. Hírek.">
 
     <!--Custom Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="css/main.css">
-    <!--Additional CSS of the Gallery page-->
-    <link rel="stylesheet" href="css/gallery-min.css">
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Orbitron|Roboto|Russo+One&amp;subset=latin-ext" rel="stylesheet">
@@ -56,43 +54,6 @@
         </nav>
 
         <main>
-            <div class="container-fluid" id="container-fluid-gallery">
-                    <h1>Galéria</h1>
-
-                    <img src="img/slider/1.jpg" alt="galéria" id="img-viewer"></img><br/>
-
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <button onclick="previousView()" class="btn btn-primary img-viewer-controller">
-                            Előző kép
-                            </button>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <button onclick="nextView()" class="btn btn-primary img-viewer-controller">
-                                Következő kép
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img onclick="" class="img-viewer-small" src="img/slider/2.jpg" id="img-viewer-0" alt=""></img>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img class="img-viewer-small" src="img/slider/3.jpg" id="img-viewer-1" alt=""></img>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img class="img-viewer-small" src="img/slider/4.jpg" id="img-viewer-2" alt=""></img>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                        <img class="img-viewer-small" src="img/slider/5.jpg" id="img-viewer-3" alt=""></img>
-                    </div>
-                </div>
         </main>
 
         <footer class="container-fluid">
@@ -110,7 +71,5 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!--Loads the current year to footer-->
         <script async defer src="js/currentYear.js"></script>
-        <!--Gallery functions-->
-        <script async defer src="js/gallery.js"></script>
     </body>
 </html>
