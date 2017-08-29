@@ -16,6 +16,7 @@
 
     <!--Custom Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Orbitron|Roboto|Russo+One&amp;subset=latin-ext" rel="stylesheet">
@@ -26,17 +27,15 @@
         <?php
             include("config.php");
             header("Content-type: text/html; charset=utf-8");
-
-            mysqli_close($connection);
          ?>
 
         <main>
-             <div class="container-fluid">
+             <div class="container-fluid" id="adminWrapper">
                  <h1>Meal Team Airsoft - Adminisztrátor felület</h1>
 
                  <div class="row">
 
-                     <div class="col-xs-12 col-sm-12 col-m-d-12 col-lg-12">
+                     <div class="col-xs-12 col-sm-12 col-m-d-6 col-lg-6">
                          <h2>Új bejegyzés</h2>
                          <form>
 
@@ -68,6 +67,26 @@
 
                          </form>
 
+                     </div>
+
+                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                         <h2>Bejegyzések</h2>
+                         <?php
+                             header("Content-type: text/html; charset=utf-8");
+
+                             $sql = 'SELECT * FROM posts';
+                             mysqli_set_charset($connection,"utf8");
+                             $query = mysqli_query($connection, $sql);
+
+                             echo '<table class="table">';
+                             while ($row = mysqli_fetch_array($query))
+                             {
+                                 echo '<tr><td>' . $row['title'] . '</td><td>' . $row['user'] . '</td><td>' . $row['date'] . '</td></tr>';
+                             }
+                             echo "</table>";
+
+                             mysqli_close($connection);
+                         ?>
                      </div>
 
                  </div>
