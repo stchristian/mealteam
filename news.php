@@ -57,20 +57,8 @@
         <main>
             <div class="container-fluid" id="newsWrapper">
             <?php
+                include("admin/config.php");
                 header("Content-type: text/html; charset=utf-8");
-
-                $host = "localhost";
-                $username = "root";
-                $password = "";
-                $database = "test";
-
-                $connection = mysqli_connect($host, $username, $password, $database);
-                if (!$connection) {
-                    echo "Hiba: nem sikerült csatlakozni a MySQL adatbázishoz." . PHP_EOL;
-                    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-                    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-                    exit;
-                }
 
                 $sql = 'SELECT * FROM posts';
                 mysqli_set_charset($connection,"utf8");

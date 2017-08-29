@@ -78,10 +78,11 @@
                              mysqli_set_charset($connection,"utf8");
                              $query = mysqli_query($connection, $sql);
 
-                             echo '<table class="table">';
+                             echo '<table class="table table-striped">';
+                             echo '<tr><td>Bejegyzés címe </td></td>Szerző </td></td>Közzététel ideje</td></tr>';
                              while ($row = mysqli_fetch_array($query))
                              {
-                                 echo '<tr><td>' . $row['title'] . '</td><td>' . $row['user'] . '</td><td>' . $row['date'] . '</td></tr>';
+                                 echo '<tr><td>' . $row['title'] . ' </td><td>' . $row['user'] . ' </td><td>' . $row['date'] . '</td></tr>';
                              }
                              echo "</table>";
 
