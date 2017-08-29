@@ -23,26 +23,55 @@
     </head>
 
     <body onload="currentYear()">
+        <?php
+            include("config.php");
+            header("Content-type: text/html; charset=utf-8");
+
+            mysqli_close($connection);
+         ?>
 
         <main>
-            <?php
-                header("Content-type: text/html; charset=utf-8");
+             <div class="container-fluid">
+                 <h1>Meal Team Airsoft - Adminisztrátor felület</h1>
 
-                $host = "localhost";
-                $username = "root";
-                $password = "";
-                $database = "test";
+                 <div class="row">
 
-                $connection = mysqli_connect($host, $username, $password, $database);
-                if (!$connection) {
-                    echo "Hiba: nem sikerült csatlakozni a MySQL adatbázishoz." . PHP_EOL;
-                    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-                    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-                    exit;
-                }
+                     <div class="col-xs-12 col-sm-12 col-m-d-12 col-lg-12">
+                         <h2>Új bejegyzés</h2>
+                         <form>
 
-                mysqli_close($connection);
-             ?>
+                             <div class="form-group">
+                                 <label for="input-title">Bejegyzés címe</label>
+                                 <textarea class="form-control" rows="1" id="input-title"></textarea>
+                             </div>
+
+                             <div class="form-group">
+                                 <label for="input-post">Bejegyzés szövege</label>
+                                 <textarea class="form-control" rows="16" id="input-post"></textarea>
+                             </div>
+
+                             <div class="form-group">
+                                 <label for="input-email">E-mail</label>
+                                 <input type="email" class="form-control" id="input-email" placeholder="ide kéne írni egy admin e-mail címét">
+                             </div>
+
+                             <div class="form-group">
+                                 <label for="input-password">Jelszó</label>
+                                 <input type="password" class="form-control" id="input-password" placeholder="csillagcsillagcsillagcsillag">
+                             </div>
+
+                             <div class="checkbox">
+                                 <label><input type="checkbox">Akarod te ezt a bejegyzést?</label>
+                             </div>
+
+                             <button type="submit" class="btn btn-default">Közzététel</button>
+
+                         </form>
+
+                     </div>
+
+                 </div>
+             </div>
         </main>
 
         <footer class="container-fluid">
