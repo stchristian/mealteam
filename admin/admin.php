@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Az ózdi airsoft sportegyesület honlapja. Adminisztrátor belépés.">
+    <meta name="description" content="Az ózdi airsoft sportegyesület honlapja. Adminisztrátori felület.">
     <meta name="author" content="László Bence, Hübner Krisztián">
     <meta name="keywords" content="airsoft,sport,mealteam,ózd,sportegyesület,csapatjáték,admin,adminidsztrátor,kezelés">
     <!--facebook-meta-->
     <meta property="og:title" content="Meal Team Airsoft">
     <meta property="og:image" content="img/mealteam-icon.png">
-    <meta property="og:description" content="Az ózdi airsoft sportegyesület honlapja. Adminisztrátor belépés.">
+    <meta property="og:description" content="Az ózdi airsoft sportegyesület honlapja. Adminisztrátori felület.">
 
     <!--Custom Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="../css/main.css">
@@ -24,10 +24,6 @@
     </head>
 
     <body onload="currentYear()">
-        <?php
-            include("config.php");
-            header("Content-type: text/html; charset=utf-8");
-         ?>
 
         <main>
              <div class="container-fluid" id="adminWrapper">
@@ -35,32 +31,28 @@
 
                  <div class="row">
 
-                     <div class="col-xs-12 col-sm-12 col-m-d-6 col-lg-6">
+                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                          <h2>Új bejegyzés</h2>
-                         <form>
+                         <form action="new_post.php" method="post">
 
-                             <div class="form-group">
+                             <div class="input-group">
                                  <label for="input-title">Bejegyzés címe</label>
-                                 <textarea class="form-control" rows="1" id="input-title"></textarea>
+                                 <textarea class="form-control" rows="1" id="input-title" name="input-title"></textarea>
                              </div>
 
-                             <div class="form-group">
+                             <div class="input-group">
                                  <label for="input-post">Bejegyzés szövege</label>
-                                 <textarea class="form-control" rows="16" id="input-post"></textarea>
+                                 <textarea class="form-control" rows="16" id="input-post" name="input-post"></textarea>
                              </div>
 
-                             <div class="form-group">
-                                 <label for="input-email">E-mail</label>
-                                 <input type="email" class="form-control" id="input-email" placeholder="ide kéne írni egy admin e-mail címét">
+                             <div class="input-group">
+                                 <label for="input-user">Felhasználónév</label>
+                                 <input type="text" class="form-control" id="input-user" placeholder="ide kéne írni egy admin felhasználónevét" name="input-user">
                              </div>
 
-                             <div class="form-group">
+                             <div class="input-group">
                                  <label for="input-password">Jelszó</label>
-                                 <input type="password" class="form-control" id="input-password" placeholder="csillagcsillagcsillagcsillag">
-                             </div>
-
-                             <div class="checkbox">
-                                 <label><input type="checkbox">Akarod te ezt a bejegyzést?</label>
+                                 <input type="password" class="form-control" id="input-password" placeholder="csillagcsillagcsillagcsillag" name="input-password">
                              </div>
 
                              <button type="submit" class="btn btn-default">Közzététel</button>
@@ -72,21 +64,21 @@
                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                          <h2>Bejegyzések</h2>
                          <?php
-                             header("Content-type: text/html; charset=utf-8");
+                            include("config.php");
+                            header("Content-type: text/html; charset=utf-8");
 
-                             $sql = 'SELECT * FROM posts';
-                             mysqli_set_charset($connection,"utf8");
-                             $query = mysqli_query($connection, $sql);
+                            $sql = 'SELECT * FROM posts';
+                            mysqli_set_charset($connection,"utf8");
+                            $query = mysqli_query($connection, $sql);
 
-                             echo '<table class="table table-striped">';
-                             echo '<tr><td>Bejegyzés címe </td></td>Szerző </td></td>Közzététel ideje</td></tr>';
-                             while ($row = mysqli_fetch_array($query))
-                             {
-                                 echo '<tr><td>' . $row['title'] . ' </td><td>' . $row['user'] . ' </td><td>' . $row['date'] . '</td></tr>';
-                             }
-                             echo "</table>";
+                            echo '<table class="table table-striped">';
+                            while ($row = mysqli_fetch_array($query))
+                            {
+                                echo '<tr><td>' . $row['title'] . ' </td><td>' . $row['user'] . ' </td><td>' . $row['date'] . '</td></tr>';
+                            }
+                            echo "</table>";
 
-                             mysqli_close($connection);
+                            mysqli_close($connection);
                          ?>
                      </div>
 
