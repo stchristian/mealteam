@@ -3,7 +3,7 @@
     <head>
     <!--meta-section-->
     <title>Meal Team Airsoft | Hírek</title>
-    <meta charset=utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Az ózdi airsoft sportegyesület honlapja. Hírek.">
