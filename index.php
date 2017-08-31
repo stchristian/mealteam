@@ -36,16 +36,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html" hreflang="hu"><span class="brandlogo"></span> Meal Team</a>
+                    <a class="navbar-brand" href="index.php" hreflang="hu"><span class="brandlogo"></span> Meal Team</a>
 
                 </div>
+
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="index.html" hreflang="hu">Kezdőlap<span class="sr-only">(current)</span></a></li>
+                      <li class="active"><a href="index.php" hreflang="hu">Kezdőlap<span class="sr-only">(current)</span></a></li>
                       <li><a href="gallery.html" hreflang="hu">Galéria</a></li>
-                      <li><a href="index.html#rules-section" hreflang="hu">Airsoft Szabályzat</a></li>
-                      <li><a href="index.html#contact-section" hreflang="hu">Kapcsolat</a></li>
-                      <li><a href="news.php" hreflang="hu">Hírek</a></li>
+                      <li><a href="index.php#rulesWrapper" hreflang="hu">Airsoft Szabályzat</a></li>
+                      <li><a href="index.php#contactWrapper" hreflang="hu">Kapcsolat</a></li>
+                      <li><a href="index.php#newsWrapper">Hírek</a></li>
                     </ul>
                 </div>
 
@@ -85,7 +86,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                <a href="index.html#apply-section">Jelentkezés</a>
+                                <a href="index.php#applyWrapper">Jelentkezés</a>
                             </div>
                         </div>
 
@@ -146,10 +147,23 @@
         </section>
 
         <section>
+            <div id="newsWrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h2>Hírek</h2>
+                        <?php
+                            include "admin/news.php";
+                        ?>
+                    </row>
+                </div>
+            </div>
+        </section>
+
+        <section>
             <div id="applyWrapper">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-6-col-lg-6" id="apply-section">
+                        <div class="col-xs-12 col-sm-6 col-md-6-col-lg-6">
                             <h2 id="join-game">Jelentkezés</h2>
                             <form action="">
                                 <div class="form-group">
@@ -178,7 +192,7 @@
         <section>
             <div id="contactWrapper">
                 <div class="container">
-                    <div class="row" id="contact-section">
+                    <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <h2>Kapcsolat</h2>
                             <div class="row">
@@ -218,8 +232,8 @@
                                     </form>
                                 </div>
 
-                                <button class="btn">
-                                    <a href="index.html" hreflang="hu">&uarr; Az oldal tetejére</a>
+                                <button class="btn btn-default">
+                                    <a href="index.php" hreflang="hu">&uarr; Az oldal tetejére</a>
                                 </button>
                             </div>
 
@@ -228,7 +242,6 @@
                 </div>
             </div>
         </section>
-
 
 
         <footer class="container-fluid text-center">
