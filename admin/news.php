@@ -6,7 +6,7 @@
     $query = mysqli_query($connection, $sql);
     while ($row = mysqli_fetch_array($query))
     {
-        echo '<div><h2>' . $row['title'] . '<br><small>' . $row['date'] . ' | ' . $row['user'] . '</small></h2><article>' . $row["post"] . '<article></div>';
+        echo '<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4"><article><h3>' . $row['title'] . '<br><small>' . $row['date'] . ' | ' . $row['user'] . '</small></h3>' . $row["post"] . '</article></div>';
     }
 
     mysqli_close($connection);
