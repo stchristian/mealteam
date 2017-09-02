@@ -27,7 +27,7 @@
 
         <main>
              <div class="container-fluid" id="adminWrapper">
-                 <h1>Meal Team Airsoft - Adminisztrátor felület</h1>
+                 <h1>Meal Team Airsoft - Adminisztrátori felület</h1>
 
                  <div class="row">
 
@@ -55,31 +55,39 @@
                                  <input type="password" class="form-control" id="input-password" placeholder="csillagcsillagcsillagcsillag" name="input-password">
                              </div>
 
-                             <button type="submit" class="btn btn-default">Közzététel</button>
+                             <button type="submit" class="btn btn-success">Közzététel</button>
 
                          </form>
 
                      </div>
 
                      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                         <h2>Bejegyzések</h2>
+                         <h2>Meglévő bejegyzések</h2>
+
                          <?php
-                            include("config.php");
-                            header("Content-type: text/html; charset=utf-8");
+                            include("admin_news.php");
+                          ?>
 
-                            $sql = 'SELECT * FROM posts';
-                            mysqli_set_charset($connection,"utf8");
-                            $query = mysqli_query($connection, $sql);
+                         <form action="delete_post.php" method="post">
 
-                            echo '<table class="table table-striped">';
-                            while ($row = mysqli_fetch_array($query))
-                            {
-                                echo '<tr><td>' . $row['title'] . ' </td><td>' . $row['user'] . ' </td><td>' . $row['date'] . '</td></tr>';
-                            }
-                            echo "</table>";
+                             <div class="input-group">
+                                 <label for="input-id">Bejegyzés azonosítója (ID)</label>
+                                 <textarea class="form-control" rows="1" id="input-id" name="input-id"></textarea>
+                             </div>
 
-                            mysqli_close($connection);
-                         ?>
+                             <div class="input-group">
+                                 <label for="input-user">Felhasználónév</label>
+                                 <input type="text" class="form-control" id="input-user" placeholder="ide kéne írni egy admin felhasználónevét" name="input-user">
+                             </div>
+
+                             <div class="input-group">
+                                 <label for="input-password">Jelszó</label>
+                                 <input type="password" class="form-control" id="input-password" placeholder="csillagcsillagcsillagcsillag" name="input-password">
+                             </div>
+
+                              <button type="submit" class="btn btn-danger">Bejegyzés törlése</button>
+                         </form>
+
                      </div>
 
                  </div>

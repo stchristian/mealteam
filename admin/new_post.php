@@ -14,11 +14,11 @@
         } else {
             $title = $_POST["input-title"];
             if (empty($_POST["input-post"])) {
-                echo "Csak van valami neved, nem?";
+                echo "Nem akarsz bejegyzést írni?";
             } else {
                 $post = $_POST["input-post"];
                 if (empty($_POST["input-user"])) {
-                    echo "Nem akarsz bejegyzést írni?";
+                    echo "Csak van valami neved, nem?";
                 } else {
                     $user = $_POST["input-user"];
                     //insert into database
