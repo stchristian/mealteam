@@ -7737,9 +7737,9 @@ button.close {
 }
 
 .navbar-brand {
-  font-family: "Black Ops One", sans-serif;
-  text-transform: uppercase;
+  font-family: 'Black Ops One', sans-serif;
   font-size: 22px;
+  text-transform: uppercase;
   transform: rotate(-6deg);
   transition: 0.2s ease;
   text-shadow: 2px 4px 3px rgba(255, 255, 255, 0.4);
@@ -7751,10 +7751,10 @@ button.close {
 
 .navbar-default .navbar-nav > li > a {
   text-align: center;
-  transition: 0.2s ease;
   font-family: 'Russo One',sans-serif;
   letter-spacing: 2px;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 20px 20px;
+  transition: background-color 0.2s ease;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover {
@@ -7975,6 +7975,39 @@ button.close {
   height: 100%;
   opacity: 0.1;
   z-index: -1;
+}
+
+#newsWrapper {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.3)), color-stop(50%, transparent), to(rgba(0, 0, 0, 0.3)));
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent 50%, rgba(0, 0, 0, 0.3));
+  background-color: #425A31;
+  padding-bottom: 30px;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+#newsWrapper h2 {
+  padding-left: 30px;
+  color: #E2F1D7;
+}
+
+#newsWrapper article {
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.5);
+  background-color: #E2F1D7;
+  border: 2px solid #112006;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+#newsWrapper article h3 {
+  padding: 5px 12px;
+  border-bottom: 3px solid #112006;
+}
+
+#newsWrapper article p {
+  text-indent: 1em;
+  text-align: justify;
 }
 
 #contactWrapper {

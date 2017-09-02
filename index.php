@@ -43,10 +43,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                       <li class="active"><a href="index.php" hreflang="hu">Kezdőlap<span class="sr-only">(current)</span></a></li>
+                      <li><a href="index.php#newsWrapper">Hírek</a></li>
                       <li><a href="gallery.html" hreflang="hu">Galéria</a></li>
                       <li><a href="index.php#rulesWrapper" hreflang="hu">Airsoft Szabályzat</a></li>
                       <li><a href="index.php#contactWrapper" hreflang="hu">Kapcsolat</a></li>
-                      <li><a href="index.php#newsWrapper">Hírek</a></li>
                     </ul>
                 </div>
 
@@ -148,9 +148,28 @@
 
         <section>
             <div id="newsWrapper">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <h2>Hírek</h2>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <article>
+                                <h3>Title <br><small>2017 szeptember 6.</small></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </article>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <article>
+                                <h3>Title <br><small>2017 szeptember 6.</small></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </article>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                            <article>
+                                <h3>Title <br><small>2017 szeptember 6.</small></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </article>
+                        </div>
+
                         <?php
                             include "admin/news.php";
                         ?>
@@ -233,7 +252,7 @@
                                 </div>
 
                                 <button class="btn btn-default">
-                                    <a href="index.php" hreflang="hu">&uarr; Az oldal tetejére</a>
+                                    <a href="#top" hreflang="hu">&uarr; Az oldal tetejére</a>
                                 </button>
                             </div>
 
