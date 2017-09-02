@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Az ózdi airsoft sportegyesület honlapja.">
     <meta name="author" content="László Bence, Hübner Krisztián">
-    <meta name="keywords" content="airsoft,sport,mealteam,ózd,sportegyesület,csapatjáték">
+    <meta name="keywords" content="airsoft,sport,mealteam,ózd,sportegyesület,csapatjáték,hírek">
     <!--facebook-meta-->
     <meta property="og:title" content="Meal Team Airsoft">
     <meta property="og:image" content="img/mealteam-icon.png">
