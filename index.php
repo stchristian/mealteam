@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="hu">
     <head>
-    <!--meta-section-->
     <title>Meal Team Airsoft | Kezdőlap</title>
+    <!--Meta-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Az ózdi airsoft sportegyesület honlapja.">
     <meta name="author" content="László Bence, Hübner Krisztián">
     <meta name="keywords" content="airsoft,sport,mealteam,ózd,sportegyesület,csapatjáték,hírek">
-    <!--facebook-meta-->
+    <!--Facebook Meta-->
     <meta property="og:title" content="Meal Team Airsoft">
     <meta property="og:image" content="img/mealteam-icon.png">
     <meta property="og:description" content="Az ózdi airsoft sportegyesület honlapja.">
+
+    <!--Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
     <!--Custom Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="css/main.css">
